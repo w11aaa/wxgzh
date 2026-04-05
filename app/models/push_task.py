@@ -11,4 +11,7 @@ class PushTask(Base):
     digest_date = Column(String(16), nullable=False)
     payload = Column(Text, nullable=False)
     status = Column(String(32), nullable=False, default='pending')
+    retries = Column(Integer, nullable=False, default=0)
+    last_error = Column(Text, nullable=True)
     created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
+    updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now(), nullable=False)

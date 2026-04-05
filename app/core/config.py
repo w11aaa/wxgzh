@@ -13,10 +13,13 @@ class Settings(BaseSettings):
     database_url: str
     redis_url: str
 
+    admin_api_key: str = 'dev-admin-key'
+
     wechat_token: str = ''
     wechat_app_id: str = ''
     wechat_app_secret: str = ''
     wechat_aes_key: str = ''
+    wechat_api_base: str = 'https://api.weixin.qq.com'
 
 
 @lru_cache

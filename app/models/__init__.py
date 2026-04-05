@@ -1,4 +1,5 @@
 from app.models.article import Article
+from app.models.crawl_log import CrawlLog
 from app.models.digest import Digest
 from app.models.digest_item import DigestItem
 from app.models.push_log import PushLog
@@ -16,4 +17,5 @@ __all__ = [
     'UserTopic',
     'PushTask',
     'PushLog',
+    'CrawlLog',
 ]
