@@ -193,6 +193,8 @@ X-API-Key: <ADMIN_API_KEY>
 
 请参考：`REAL_SOURCE_SETUP.md`（提供从环境变量到真实 RSS 来源接入、回调验证、成功判定的完整步骤）。
 
+另请参考：`ENV_SETUP_TUTORIAL.md`（保姆级 `.env` 获取与填写教程，含每个字段来源与验证命令）。
+
 ## 十一、下一步迭代建议
 
 1. 接入 Alembic 迁移
